@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "lint:html": "htmlhint .",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "docs": "jsdoc -c jsdoc.json"
   },
   "type": "module",
   "jest": {
@@ -21,10 +22,11 @@
     "eslint": "^9.26.0",
     "globals": "^16.1.0",
     "htmlhint": "^1.1.4",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "jsdoc": "^4.0.4"
   },
   "eslintIgnore": [
-  "package.json",
-  "package-lock.json"
-]
+    "package.json",
+    "package-lock.json"
+  ]
 }
