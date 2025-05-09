@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-       - name: Download Codacy CLI
+      - name: Download Codacy CLI
         run: |
           curl -Ls https://github.com/codacy/codacy-analysis-cli/releases/latest/download/codacy-analysis-cli-linux -o codacy-analysis-cli
           chmod +x codacy-analysis-cli
