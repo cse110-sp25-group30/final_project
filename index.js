@@ -9,3 +9,4 @@ function Card(title, author) {
   this.author = author;
 }
 const c1 = new Card("HEY", "Bob");
+console.log(c1.author);
