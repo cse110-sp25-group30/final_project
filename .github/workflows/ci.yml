@@ -22,6 +22,6 @@ jobs:
         run: npm install
 
       - name: Run Codacy static analysis
-        run: npx @codacy/codacy-analysis-cli analyze -t ${{ secrets.CODACY_PROJECT_TOKEN }}
+        run: npx codacy-analysis-cli analyze -t ${{ secrets.CODACY_PROJECT_TOKEN }}
 
 
