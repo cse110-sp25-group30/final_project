@@ -21,7 +21,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Codacy static analysis
-        run: npx codacy-analysis-cli analyze -t ${{ secrets.CODACY_PROJECT_TOKEN }}
+       - name: Download Codacy CLI
+        run: |
+          curl -Ls https://github.com/codacy/codacy-analysis-cli/releases/latest/download/codacy-analysis-cli-linux -o codacy-analysis-cli
+          chmod +x codacy-analysis-cli
 
+      - name: Run Codacy static analysis
+        run: ./codacy-analysis-cli analyze -t ${{ secrets.CODACY_PROJECT_TOKEN }}
 
