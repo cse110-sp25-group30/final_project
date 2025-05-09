@@ -8,3 +8,4 @@ function Card(title, author) {
   this.title = title;
   this.author = author;
 }
+const c1 = new Card("HEY", "Bob");
